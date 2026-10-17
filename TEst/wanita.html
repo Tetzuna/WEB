@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Wanita - Zalora Clone</title>
+    <!-- Menghubungkan ke file CSS utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ZALORA-CLONE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wanita.html" style="color: #e60000; font-weight: bold;">Wanita</a></li>
+                <li><a href="pria.html">Pria</a></li>
+                <li><a href="cart.html">Keranjang (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- KONTEN PRODUK WANITA -->
+    <main class="products-container" style="margin-top: 50px;">
+        <h2 class="section-title">Koleksi Fashion Wanita</h2>
+        
+        <div class="product-grid">
+            <!-- Produk Wanita 1 -->
+            <div class="product-card">
+                <img src="download.jpg" alt="Golden Essence" class="product-image">
+                <div class="product-content">
+                    <h3>Golden Essence</h3>
+                    <p class="product-price">Rp349K</p>
+                    <button class="add-to-cart-btn" onclick="pilihProduk('Golden Essence (Wanita)', 'Rp349K')">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produk Wanita 2 -->
+            <div class="product-card">
+                <img src="download.jpg" alt="Chic Floral Dress" class="product-image">
+                <div class="product-content">
+                    <h3>Chic Floral Dress</h3>
+                    <p class="product-price">Rp325K</p>
+                    <button class="add-to-cart-btn" onclick="pilihProduk('Chic Floral Dress', 'Rp325K')">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produk Wanita 3 -->
+            <div class="product-card">
+                <img src="download.jpg" alt="Elegant Blazer" class="product-image">
+                <div class="product-content">
+                    <h3>Elegant Blazer</h3>
+                    <p class="product-price">Rp450K</p>
+                    <button class="add-to-cart-btn" onclick="pilihProduk('Elegant Blazer', 'Rp450K')">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Zalora Clone. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
