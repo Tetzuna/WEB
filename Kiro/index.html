@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VESTI — Fashion Online Terkini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    🚚 Gratis Ongkir untuk pembelian di atas Rp 300.000 &nbsp;|&nbsp; 🎉 New Arrivals Setiap Minggu!
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">VESTI</a>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#categories">Kategori</a>
+        <a href="#products">Produk</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Cari">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav-icon-btn cart-btn" id="cartBtn" aria-label="Keranjang">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#hero">Home</a>
+      <a href="#categories">Kategori</a>
+      <a href="#products">Produk</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">New Collection 2024</span>
+        <h1 class="hero-title">Tampil Percaya Diri<br /><em>Setiap Hari</em></h1>
+        <p class="hero-subtitle">Koleksi fashion terkini untuk gaya hidup modern kamu. Dari kasual hingga formal, semua ada di VESTI.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-dark">Shop Now</a>
+          <a href="#categories" class="btn btn-outline-dark">Lihat Kategori</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Original 100%
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Free Return 30 Hari
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            COD Tersedia
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <div class="hero-card-img">👗</div>
+          <div class="hero-card-label">
+            <span>New Arrival</span>
+            <strong>Summer Dress Collection</strong>
+          </div>
+        </div>
+        <div class="hero-card-mini top">
+          <div class="hero-card-mini-img">👕</div>
+          <div>
+            <small>Bestseller</small>
+            <span>Casual Tee</span>
+          </div>
+        </div>
+        <div class="hero-card-mini bottom">
+          <div class="hero-card-mini-img">👖</div>
+          <div>
+            <small>Trending</small>
+            <span>Slim Pants</span>
+          </div>
+        </div>
+        <div class="hero-badge-float">
+          <span class="badge-float-num">50K+</span>
+          <span>Happy Customers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>T-Shirt</span><span>·</span>
+      <span>Dress</span><span>·</span>
+      <span>Kemeja</span><span>·</span>
+      <span>Celana</span><span>·</span>
+      <span>Jaket</span><span>·</span>
+      <span>Hoodie</span><span>·</span>
+      <span>Rok</span><span>·</span>
+      <span>Blazer</span><span>·</span>
+      <span>Cardigan</span><span>·</span>
+      <span>Jumpsuit</span><span>·</span>
+      <span>T-Shirt</span><span>·</span>
+      <span>Dress</span><span>·</span>
+      <span>Kemeja</span><span>·</span>
+      <span>Celana</span><span>·</span>
+      <span>Jaket</span><span>·</span>
+      <span>Hoodie</span><span>·</span>
+      <span>Rok</span><span>·</span>
+      <span>Blazer</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <span class="section-eyebrow">Jelajahi</span>
+      <h2 class="section-title">Belanja Berdasarkan Kategori</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card large" data-filter="wanita">
+        <div class="cat-bg" style="background:linear-gradient(135deg,#f8e8f0,#f0d8e8)">👗</div>
+        <div class="cat-info">
+          <strong>Wanita</strong>
+          <span>120+ Produk</span>
+        </div>
+      </div>
+      <div class="cat-card" data-filter="pria">
+        <div class="cat-bg" style="background:linear-gradient(135deg,#dce8f8,#ccddf5)">👔</div>
+        <div class="cat-info">
+          <strong>Pria</strong>
+          <span>95+ Produk</span>
+        </div>
+      </div>
+      <div class="cat-card" data-filter="anak">
+        <div class="cat-bg" style="background:linear-gradient(135deg,#fff8d8,#ffefc0)">🧒</div>
+        <div class="cat-info">
+          <strong>Anak-anak</strong>
+          <span>60+ Produk</span>
+        </div>
+      </div>
+      <div class="cat-card" data-filter="aksesoris">
+        <div class="cat-bg" style="background:linear-gradient(135deg,#e8f8e8,#d0f0d0)">👜</div>
+        <div class="cat-info">
+          <strong>Aksesoris</strong>
+          <span>45+ Produk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products-section" id="products">
+    <div class="section-header">
+      <span class="section-eyebrow">Koleksi Terbaru</span>
+      <h2 class="section-title">Pilihan Terpopuler</h2>
+      <p class="section-desc">Temukan outfit impian kamu dari ribuan pilihan gaya terkini.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="wanita">Wanita</button>
+      <button class="filter-btn" data-filter="pria">Pria</button>
+      <button class="filter-btn" data-filter="anak">Anak</button>
+      <button class="filter-btn" data-filter="aksesoris">Aksesoris</button>
+      <button class="filter-btn" data-filter="sale">Sale</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="products-cta">
+      <a href="#" class="btn btn-outline">Lihat Semua Produk →</a>
+    </div>
+  </section>
+
+  <!-- ===== PROMO BANNER ===== -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <div class="promo-text">
+        <span class="section-eyebrow">Penawaran Terbatas</span>
+        <h2>Flash Sale Up to 70% Off!</h2>
+        <p>Jangan lewatkan penawaran eksklusif untuk koleksi pilihan. Stok terbatas!</p>
+        <a href="#products" class="btn btn-white">Belanja Sekarang</a>
+      </div>
+      <div class="promo-visual">
+        <div class="promo-emoji">🏷️</div>
+        <div class="countdown" id="countdown">
+          <div class="count-block"><span id="cdHour">08</span><small>Jam</small></div>
+          <div class="count-sep">:</div>
+          <div class="count-block"><span id="cdMin">45</span><small>Menit</small></div>
+          <div class="count-sep">:</div>
+          <div class="count-block"><span id="cdSec">00</span><small>Detik</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <div class="about-img-block">
+        <div class="about-img-emoji">🧵</div>
+        <div class="about-img-tag">
+          <strong>Est. 2018</strong>
+          <span>Jakarta, Indonesia</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="section-eyebrow">Tentang VESTI</span>
+      <h2 class="section-title">Fashion untuk Semua, Dibuat dengan Cinta</h2>
+      <p>VESTI lahir dari semangat membuat fashion berkualitas tinggi yang terjangkau untuk semua kalangan. Sejak 2018, kami telah melayani lebih dari 50.000 pelanggan di seluruh Indonesia.</p>
+      <p>Setiap produk kami dirancang oleh desainer lokal berbakat dan diproduksi menggunakan bahan premium yang nyaman dipakai sepanjang hari.</p>
+      <div class="about-stats">
+        <div class="about-stat"><strong>50K+</strong><span>Pelanggan</span></div>
+        <div class="about-stat"><strong>500+</strong><span>Produk</span></div>
+        <div class="about-stat"><strong>34</strong><span>Provinsi</span></div>
+        <div class="about-stat"><strong>4.9★</strong><span>Rating</span></div>
+      </div>
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">✂️</div>
+          <div>
+            <strong>Desainer Lokal</strong>
+            <p>Koleksi dirancang oleh desainer Indonesia berbakat</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌿</div>
+          <div>
+            <strong>Bahan Premium</strong>
+            <p>Kain berkualitas, nyaman dipakai seharian penuh</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">↩️</div>
+          <div>
+            <strong>Garansi 30 Hari</strong>
+            <p>Tidak cocok? Kembalikan gratis, no questions asked</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <span class="section-eyebrow">Review Pelanggan</span>
+      <h2 class="section-title">Apa Kata Mereka?</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Kualitas bajunya luar biasa! Bahannya adem, jahitannya rapi, dan ukurannya pas banget. Pasti balik lagi beli di VESTI!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:#ffd6e0">AW</div>
+          <div>
+            <strong>Aulia Widya</strong>
+            <span>Surabaya · Pembelian: Summer Dress</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card featured">
+        <div class="stars">★★★★★</div>
+        <p>"Pengiriman super cepat, baru order siang sudah sampai besok paginya. Bajunya juga persis sama kayak foto. Recommended banget!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:#c3d4f5">BP</div>
+          <div>
+            <strong>Bagas Pratama</strong>
+            <span>Jakarta · Pembelian: Slim Chino</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Udah belanja 5x di VESTI dan ga pernah kecewa. Desainnya selalu up-to-date, harganya juga masuk akal. Love it!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:#d5f5c3">RP</div>
+          <div>
+            <strong>Rina Puspita</strong>
+            <span>Bandung · Pelanggan Setia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <span class="section-eyebrow">Newsletter</span>
+      <h2>Jadilah yang Pertama Tahu!</h2>
+      <p>Daftarkan email kamu dan dapatkan voucher diskon <strong>Rp 50.000</strong> untuk pembelian pertama.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Masukkan email kamu..." required />
+        <button type="submit" class="btn btn-dark">Klaim Voucher</button>
+      </form>
+      <p class="newsletter-note">🔒 Privasi kamu aman bersama kami. Tidak ada spam.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-eyebrow">Hubungi Kami</span>
+      <h2 class="section-title">Kami Siap Membantu Kamu</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Alamat</strong>
+            <p>Jl. Kemang Raya No. 25, Jakarta Selatan 12730</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">�</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <p>+62 812 3456 7890 (Chat 24 Jam)</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p>hello@vesti.id</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <strong>Jam Layanan CS</strong>
+            <p>Senin–Minggu: 08.00–21.00 WIB</p>
+          </div>
+        </div>
+        <div class="contact-apps">
+          <p><strong>Juga tersedia di:</strong></p>
+          <div class="app-badges">
+            <span class="app-badge">🛍️ Tokopedia</span>
+            <span class="app-badge">🛒 Shopee</span>
+            <span class="app-badge">📦 Lazada</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Nama kamu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@domain.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Topik</label>
+          <select id="subject">
+            <option value="">Pilih topik...</option>
+            <option>Pertanyaan Produk</option>
+            <option>Status Pesanan</option>
+            <option>Retur & Refund</option>
+            <option>Kerja Sama</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" rows="5" placeholder="Tuliskan pesan kamu di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Kirim Pesan →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">VESTI</a>
+        <p>Fashion terkini untuk semua kalangan. Belanja mudah, pengiriman cepat, kualitas terjamin.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.19 8.19 0 004.79 1.52V6.83a4.85 4.85 0 01-1.02-.14z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp" class="social-link">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Kategori</h4>
+          <a href="#">Pakaian Wanita</a>
+          <a href="#">Pakaian Pria</a>
+          <a href="#">Pakaian Anak</a>
+          <a href="#">Aksesoris</a>
+          <a href="#">Sale & Promo</a>
+        </div>
+        <div class="footer-col">
+          <h4>Perusahaan</h4>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Karir</a>
+          <a href="#">Blog Fashion</a>
+          <a href="#">Affiliate</a>
+        </div>
+        <div class="footer-col">
+          <h4>Bantuan</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Lacak Pesanan</a>
+          <a href="#">Panduan Ukuran</a>
+          <a href="#">Retur & Refund</a>
+          <a href="#">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 VESTI Fashion. All rights reserved.</p>
+      <p>Dibuat dengan ❤️ di Indonesia</p>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOT WIDGET ===== -->
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-toggle" id="chatToggle" aria-label="Buka chat">
+      <svg class="chat-icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      <svg class="chat-icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <span class="chat-badge" id="chatBadge">1</span>
+    </button>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">V</div>
+          <div>
+            <strong>VESTI Assistant</strong>
+            <span class="chat-status"><span class="status-dot"></span>Online</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatCloseBtn" aria-label="Tutup chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+          <div class="msg-avatar">V</div>
+          <div class="msg-bubble">
+            Halo! 👋 Selamat datang di <strong>VESTI Fashion</strong>! Saya siap membantu kamu menemukan outfit yang pas. 👗<br/><br/>
+            Mau cari apa hari ini?
+          </div>
+        </div>
+        <div class="quick-replies" id="quickReplies">
+          <button class="quick-btn" data-msg="Rekomendasikan baju wanita yang lagi trend">👗 Trend Wanita</button>
+          <button class="quick-btn" data-msg="Rekomendasikan baju pria kekinian">👔 Trend Pria</button>
+          <button class="quick-btn" data-msg="Ada promo atau diskon apa sekarang?">🏷️ Promo</button>
+          <button class="quick-btn" data-msg="Bagaimana panduan ukuran baju di VESTI?">� Panduan Ukuran</button>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <div class="chat-input-wrap">
+          <input type="text" id="chatInput" placeholder="Tanya soal produk, ukuran, promo..." autocomplete="off" />
+          <button class="chat-send-btn" id="chatSendBtn" aria-label="Kirim pesan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <p class="chat-powered">Powered by VESTI AI</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer (simple) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <strong>Keranjang Belanja</strong>
+      <button id="cartDrawerClose">✕</button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <div class="cart-empty">
+        <div style="font-size:3rem">🛒</div>
+        <p>Keranjang kamu masih kosong</p>
+        <a href="#products" class="btn btn-dark" id="startShoppingBtn">Mulai Belanja</a>
+      </div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none">
+      <div class="cart-total" id="cartTotal">Total: Rp 0</div>
+      <button class="btn btn-dark w-full" id="checkoutBtn">Checkout →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
